@@ -5,7 +5,7 @@ sudo apt update
 
 
 # Устанавливаем Python 3.10
-sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
+sudo apt -y install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
 
 wget https://www.python.org/ftp/python/3.10.8/Python-3.10.8.tgz
 
@@ -19,6 +19,8 @@ make -j 2
 
 sudo make altinstall
 
+cd ../
+
 rm -r Python-3.10.8
 
 rm Python-3.10.8.tgz
@@ -29,4 +31,7 @@ sudo apt -y install postgresql
 
 
 # Устанавливаем Redis
-sudo apt install redis
+sudo apt -y install redis
+
+# Устанавливаем Nginx
+sudo apt -y install nginx
