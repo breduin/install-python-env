@@ -18,6 +18,12 @@ apt install sudo
 sudo apt-get install git-all
 ```
 
+### Установить netstat
+```sh
+apt install net-tools
+```
+
+
 ## Как запустить
 
 - скачать скрипт;
