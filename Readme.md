@@ -26,11 +26,19 @@ apt install net-tools
 
 ## Как запустить
 
-- скачать скрипт;
+- скачать репозиторий:
+```sh
+git clone https://github.com/breduin/install-python-env.git
+```
+- сделать скрипт исполняемым:
 ```sh
 chmod u+x install_python_env.sh
 ```
-
+и, если нужен certbot:
+```sh
+chmod u+x install_certbot.sh
+```
+запустить:
 ```sh
 ./install_python_env.sh
 ```
@@ -53,3 +61,9 @@ source ~/.bashrc
 ```sh
 python3.10 --version
 ```
+
+Если нужна установка certbot, но необходимо выйти/перезагрузиться и запустить скрипт для certbot:
+```sh
+./install_certbot.sh
+```
+
