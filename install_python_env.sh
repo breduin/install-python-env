@@ -36,3 +36,11 @@ sudo apt -y install redis
 
 # Устанавливаем Nginx
 sudo apt -y install nginx
+
+
+# Устанавливаем snap для certbot (Let's Encrypt)
+sudo apt update
+sudo apt install snapd
+# Here one needs to reboot or logout and check in again
+
+
